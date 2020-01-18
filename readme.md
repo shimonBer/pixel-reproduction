@@ -1,56 +1,31 @@
-Project Title
-One Paragraph of project description goes here
+#**Pixel Reproduction**
 
-Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+###This program simulates a reproduction of pixel population.
+A pixel is an entity which carries the values of RGB (red, green, blue).
+A population of pixels is a collection of pixels.
+Pixels can reproduce in couples. This process takes two random pixels and create a third one by calculate the average 
+of their values. The population initially consists of 2 or more pixels (up for the user to decide the initial amount).
+The program simulates a few stages of reproduction (the number of stages is also up for the user to decide).
+Time between one reproduction to another is measured by whole seconds and it is up for the user to decide.
+A pixel can and will die after participating in several reproductions (again, up for the user to decide).
 
-Prerequisites
-What things you need to install the software and how to install them
+####Getting Started
+In order to run the program run the following command:
 
-Give examples
-Installing
-A step by step series of examples that tell you how to get a development env running
+     >pixel_production.py initial_pixels_amount, reproduction_interval, number_of_iterations, >reproductions_amount_till_death
+All arguments are mandatory. Their values are explained above or via --help command.
 
-Say what the step will be
+####Prerequisites
+argparse, numpy, time, random, multiprocessing 
 
-Give the example
-And repeat
+####Installing
+Run the following command:
 
-until finished
-End with an example of getting some data out of the system or using it for a little demo
+    > pip install argparse numpy time random multiprocessing 
 
-Running the tests
-Explain how to run the automated tests for this system
+####About the code
+The reproduction is achieved by using multiprocessing. Each process takes a couple of pixels to reproduce in order to
+get an efficient and fast program.
 
-Break down into end to end tests
-Explain what these tests test and why
-
-Give an example
-And coding style tests
-Explain what these tests test and why
-
-Give an example
-Deployment
-Add additional notes about how to deploy this on a live system
-
-Built With
-Dropwizard - The web framework used
-Maven - Dependency Management
-ROME - Used to generate RSS Feeds
-Contributing
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
-
-Versioning
-We use SemVer for versioning. For the versions available, see the tags on this repository.
-
-Authors
-Billie Thompson - Initial work - PurpleBooth
-See also the list of contributors who participated in this project.
-
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details
-
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
+####Authors
+Shimon Berkovich
