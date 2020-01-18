@@ -10,9 +10,9 @@ Time between one reproduction to another is measured by whole seconds and it is 
 A pixel can and will die after participating in several reproductions (again, up for the user to decide).
 
 #### Getting Started
-In order to run the program run the following command (replace each argument with the proper integer):
+In order to run the program run the following command (replace each argument with the proper integer) inside the project folder:
 
-> pixel_production.py initial_pixels_amount, reproduction_interval, number_of_iterations, reproductions_amount_till_death
+> python3 ./pixel_reproduction.py initial_pixels_amount, reproduction_interval, number_of_iterations, reproductions_amount_till_death
 
 All arguments are mandatory. 
 Their values are explained above or via --help command.
