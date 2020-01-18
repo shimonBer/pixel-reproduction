@@ -1,4 +1,4 @@
-#**Pixel Reproduction**
+# **Pixel Reproduction**
 
 ###This program simulates a reproduction of pixel population.
 A pixel is an entity which carries the values of RGB (red, green, blue).
@@ -9,23 +9,23 @@ The program simulates a few stages of reproduction (the number of stages is also
 Time between one reproduction to another is measured by whole seconds and it is up for the user to decide.
 A pixel can and will die after participating in several reproductions (again, up for the user to decide).
 
-####Getting Started
+#### Getting Started
 In order to run the program run the following command:
 
-     >pixel_production.py initial_pixels_amount, reproduction_interval, number_of_iterations, >reproductions_amount_till_death
+> pixel_production.py initial_pixels_amount, reproduction_interval, number_of_iterations, >reproductions_amount_till_death
 All arguments are mandatory. Their values are explained above or via --help command.
 
-####Prerequisites
+#### Prerequisites
 argparse, numpy, time, random, multiprocessing 
 
-####Installing
+#### Installing
 Run the following command:
 
-    > pip install argparse numpy time random multiprocessing 
+> pip install argparse numpy time random multiprocessing 
 
-####About the code
+#### About the code
 The reproduction is achieved by using multiprocessing. Each process takes a couple of pixels to reproduce in order to
 get an efficient and fast program.
 
-####Authors
+#### Authors
 Shimon Berkovich
